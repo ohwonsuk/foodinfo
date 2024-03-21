@@ -13,7 +13,7 @@ function FavoritesContextProvider({ children }) {
     setFavoritesIds((currentFavIds) => [...currentFavIds, id]);
   }
 
-  function removeFavorites() {
+  function removeFavorites(id) {
     setFavoritesIds((currentFavIds) =>
       currentFavIds.filter((mealId) => mealId != id)
     );
